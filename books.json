@@ -1,0 +1,18 @@
+[
+    {
+        "ID": 1,
+        "Title": "Bell Jar",
+        "Author": "Sylvia Plath",
+        "Genre": "fictional autobiographical novel",
+        "year": 1963,
+        "ISBN": "9780060133566"
+    },
+    {
+        "ID": 2,
+        "Title": "The stranger",
+        "Author": "Albert Camus",
+        "Genre": "existential fiction",
+        "year": 1942,
+        "ISBN": "9780394533056"
+    }
+]

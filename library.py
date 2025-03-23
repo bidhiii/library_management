@@ -1,4 +1,5 @@
 from book import Book #importing Book class from book.py file
+import json
 
 class Library:
     def __init__ (self):
@@ -6,7 +7,7 @@ class Library:
     
     def add_books (self, book): #to add books
         self.books.append(book) #to add a new book object to the self.books list
-        print(f"This book '{book.title}' is added to the library ")
+        print(f"The book '{book.title}' is added to the library ")
      
     def display_all_books (self): #to view all the books
         if self.books:
@@ -34,8 +35,8 @@ class Library:
                 if new_author:
                     book.author=new_author
                     print(f"Book with isbn '{ISBN}' updated sucessfully!")
-                return
-            print(f"Cannot update books with isbn '{ISBN}' ")                               
+                else:
+                    print(f"Cannot update books with isbn '{ISBN}' ")                               
 
     def __remove__ (self, ISBN):
         for book in self.books:
